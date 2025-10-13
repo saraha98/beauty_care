@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your landing page description here" />
+    <meta name="author" content="Your Name" />
+
+    <!-- Title -->
+    <title>LOTUS</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico" />
+
+    <!-- Bootstrap CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome (Icons) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts (Example: Manrope) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container d-flex align-items-center">
+
+            <!-- Brand -->
+            <a class="navbar-brand fw-bold fs-3" href="#">LOTUS</a>
+
+            <!-- Center Menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#beauty-care">Beauty Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#virtual-care">Virtual Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kids-beauty">Kids Beauty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Sign Up Button -->
+            <a href="#signup" class="btn px-4">Sign Up</a>
+
+            <!-- Mobile toggle -->
+            <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section ">
+        <div class="dot-circle">
+            <img src="assets/img/Ornament 11.png">
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Text Content -->
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold hero-title">Beaty outside,<br>
+                        Health inside.</h1>
+                    <p class="lead hero-subtitle">
+                        Same/next-day primary care designed around you and your life. Most insurance accepted.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#beauty-care" class="btn btn-lg me-3 hero-btn-primary mb-3">Get started today</a>
+                        <a href="#contact" class="btn btn-lg hero-btn-secondary mb-3">subscribe for membership </a>
+                    </div>
+                    <p class="mt-4 fw-bold hero-subtitle-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+
+                <!-- Image Content -->
+                <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                    <div class="image-section-container ">
+                        <div class="star">
+                            <!-- <div class="bar horizontal"></div>
+                            <div class="bar vertical"></div>
+                            <div class="bar diagonal1"></div>
+                            <div class="bar diagonal2"></div> -->
+                            <img src="assets/img/Group 1352.png">
+                        </div>
+                        <div class="zig-zag">
+                            <img src="assets/img/Ornament 80.png">
+                        </div>
+                        <div class="curved-image-wrapper">
+                            <img src="assets/img/thumbnail.png" alt="LOTUS Beauty" class="img-fluid hero-image">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-5">
+        <div class="dot-rectangle">
+            <img src="assets/img/Ornament_81.png">
+        </div>
+        <div class="container text-center">
+            
+            <!-- Section Title -->
+            <div class="title-container ">
+                <h2 class="section-title mb-5">Take Care of your <br> Anxiety</h2>
+                <div class="zig-zag-line ">
+                    <img src="assets/img/Ornament 83.png">
+                </div>
+            </div>
+            
+
+            <!-- Cards Row -->
+            <div class="row g-4 mt-5">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="category-card p-4 h-100">
+                        <div class="image-container m-auto">
+                            <img src="assets/img/free_treatment.png" alt="Beauty Care" class="img-fluid  category-img">
+                        </div>
+                        <div class="mt-2 mx-auto d-flex justify-content-between align-items-center category-description">
+                            <h5 class="mb-1">Face Treatment</h5>
+                            <a href="#beauty-care" class="category-link mb-1">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-card p-4 h-100">
+                        <div class="image-container m-auto">
+                            <img src="assets/img/beauty_tips.png" alt="Virtual Care" class="img-fluid  category-img">
+                        </div>
+                        <div class="mt-2 mx-auto d-flex justify-content-between align-items-center category-description">
+                            <h5 class="mb-3">Beauty Tips</h5>
+                            <a href="#virtual-care" class="category-link">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="category-card p-4 h-100">
+                        <div class="image-container m-auto">
+                            <img src="assets/img/skin_care.png" alt="Kids Beauty" class="img-fluid  category-img">
+                        </div>
+                        
+                        <div class="mt-2 mx-auto d-flex justify-content-between align-items-center category-description">
+                            <h5 class="mb-3">Skin Care</h5>
+                            <a href="#kids-beauty" class="category-link">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testemonials Section -->
+    <section id="testemonials" class="py-5">
+        <div class="container text-center">
+            <!-- Section Title -->
+            <div class="title-container ">
+                <h2 class="section-title mb-5">Taking care <br> special around you</h2>
+                <div class="zig-zag-line ">
+                    <img src="assets/img/Ornament 83.png">
+                </div>
+            </div>
+            
+
+            <!-- Cards Row -->
+            <div class="row  mt-5">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="testemonial-card p-4 h-100">
+                        <div class="image-container m-auto">
+                            <img src="assets/img/illustration1 (1).png" alt="Beauty Care" class="img-fluid  testemonial-img">
+                        </div>
+                        <div class="mt-2 mx-auto d-flex justify-content-between align-items-center testemonial-description">
+                            <p class="description">
+                                Feature short description contain 2 line paragraphs
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="testemonial-card p-4 h-100">
+                        <div class="image-container m-auto">
+                            <img src="assets/img/illustration1 (2).png" alt="Beauty Care" class="img-fluid  testemonial-img">
+                        </div>
+                        <div class="mt-2 mx-auto d-flex justify-content-between align-items-center testemonial-description">
+                            <p class="description">
+                                Feature short description contain 2 line paragraphs
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="testemonial-card p-4 h-100">
+                        <div class="image-container m-auto">
+                            <img src="assets/img/illustration1 (3).png" alt="Beauty Care" class="img-fluid  testemonial-img">
+                        </div>
+                        <div class="mt-2 mx-auto d-flex justify-content-between align-items-center testemonial-description">
+                            <p class="description">
+                                Feature short description contain 2 line paragraphs
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="testemonial-card p-4 h-100">
+                        <div class="image-container m-auto">
+                            <img src="assets/img/illustration1 (4).png" alt="Beauty Care" class="img-fluid  testemonial-img">
+                        </div>
+                        <div class="mt-2 mx-auto d-flex justify-content-between align-items-center testemonial-description">
+                            <p class="description">
+                                Feature short description contain 2 line paragraphs
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="testemonial-card p-4 h-100">
+                        <div class="image-container m-auto">
+                            <img src="assets/img/illustration1 (5).png" alt="Beauty Care" class="img-fluid  testemonial-img">
+                        </div>
+                        <div class="mt-2 mx-auto d-flex justify-content-between align-items-center testemonial-description">
+                            <p class="description">
+                                Feature short description contain 2 line paragraphs
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="testemonial-card p-4 h-100">
+                        <div class="image-container m-auto">
+                            <img src="assets/img/illustration1 (6).png" alt="Beauty Care" class="img-fluid  testemonial-img">
+                        </div>
+                        <div class="mt-2 mx-auto d-flex justify-content-between align-items-center testemonial-description">
+                            <p class="description">
+                                Feature short description contain 2 line paragraphs
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row  mt-2 membership ">
+
+                <div class="desc m-auto mb-3">
+                    <h5> Membership costs only $199/year. 
+                        Learn more about membership
+                    </h5>
+                </div>
+                <div>
+                    <a href="#beauty-care" class="btn btn-lg me-3 hero-btn-primary">Join today</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- more Section -->
+    <section id="more" class="py-5">
+        <div class="container text-center">
+            <div class="dot-rectangle">
+                <img src="assets/img/Ornament 84.png">
+            </div>
+            <!-- Section Title -->
+            <div class="title-container ">
+                <h2 class="section-title mb-5">See what makes <br>  beautycare different</h2>
+                <div class="zig-zag-line ">
+                    <img src="assets/img/Ornament 83.png">
+                </div>
+            </div>
+            
+
+            <!-- Cards Row -->
+            <div class="row  mt-5">
+                    <div class="image-container">
+                        <img src="assets/img/Rectangle 1338.png"  class="cover-img">
+                        <img src="assets/img/Play.png" class="play-btn">
+                    </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="partner" class="py-5 ">
+         <div class="container text-center">
+            <!-- Section Title -->
+            <div class="title-container ">
+                <h2 class="section-title mb-5">Impacted by <br>  8,000+ people</h2>
+                <div class="zig-zag-line ">
+                    <img src="assets/img/Ornament 83.png">
+                </div>
+            </div>
+            
+
+            <!-- Cards Row -->
+            <div class="row align-items-center  mt-5">
+                <div class="col-lg-3 col-md-6 col-12 mb-5">
+                    <img src="assets/img/Group 1000003552.png">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-5">
+                    <img src="assets/img/Group 1000003547.png">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-5">
+                    <img src="assets/img/Group 1000003548.png">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-5">
+                    <img src="assets/img/Group 1000003550.png">
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="get_started" class="">
+       <div class="container text-center">
+            <div class="dot-rectangle">
+                <img src="assets/img/Ornament 24.png">
+            </div>
+            <div class="trio-zig-zag">
+                <img src="assets/img/Ornament 85.png">
+            </div>
+            <!-- Section Title -->
+            <div class="title-container ">
+                <h2 class="section-title mb-5">Get started with <br> Beatutycare today</h2>
+                <div class="zig-zag-line ">
+                    <img src="assets/img/Ornament 83.png">
+                </div>
+            </div>
+            
+
+            <!-- Cards Row -->
+            <div class="row  mt-5">
+                <div class="col-lg-12">
+                    <div class="mt-4">
+                        <a href="#beauty-care" class="btn btn-lg me-3 mb-3 hero-btn-primary">Membership Sign up</a>
+                        <a href="#contact" class="btn btn-lg hero-btn-secondary mb-3">Join today </a>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 text-white mb-3">
+                    <a class="navbar-brand fw-bold fs-3  " href="#">LOTUS</a>
+                    <p class="mt-4">Clarity gives you the blocks and components you need to create a truly professional website.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 text-white  mb-3">
+                    <p>COMPANY</p>
+                    <ul>
+                        <li>About</li>
+                        <li>Features</li>
+                        <li>Works</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12  text-white mb-3">
+                    <p>HELP</p>
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Delivery Details</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 text-white  mb-3">
+                    <p>NEWSLETTER</p>
+                    <form>
+                        <input placeholder="Enter your email address"><br>
+                        <input type="submit" value="Subscribe Now">
+                    </form>
+                </div>
+                <hr class="text-white mt-5 ">
+                <div class="col-lg-12 text-center text-white">
+                     © Copyright 2025, All Rights Reserved by sara
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

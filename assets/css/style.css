@@ -1,0 +1,411 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    margin-bottom: 10px;
+    font-family: 'Manrope';
+    font-weight: 100;
+}
+/* Navbar background */
+.navbar {
+    background-color: #FBCFC3;
+}
+
+/* Brand logo text */
+.navbar-brand {
+    color: #1C110D !important;
+    font-family: 'Bubblegum Sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+/* Nav links */
+.nav-link {
+    color: #6A3D2C !important;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    opacity: 70%;
+    /* font-weight: 500; */
+    transition:  0.3s ease;
+}
+.nav-link:hover {
+    color: #6A3D2C !important;
+    opacity: 100%;
+    font-weight: bold;
+}
+
+/* Active link */
+.nav-link.active {
+    color: #6A3D2C !important;
+    opacity: 100%;;
+    font-weight: bold;
+}
+
+/* Sign Up button */
+.navbar .btn {
+    background-color: #6A3D2C;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+}
+
+.navbar .btn:hover {
+    background-color: #542f22;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #FBCFC3;
+    min-height: calc(100vh - 84px); /* Make it full screen height */
+    display: flex;      /* Use flex to center content vertically */
+    align-items: center; /* Vertically center content */
+    padding-top: 20px;     /* Remove extra padding if needed */
+    padding-bottom: 80px;  /* Remove extra padding if needed */
+    position: relative;
+}
+
+
+.hero-title {
+    color: #6A3D2C;
+    font-size: 80px;
+    font-family: 'Manrope', sans-serif;
+    /* font-weight: 500; */
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.hero-subtitle {
+    color: #6A3D2C;
+    max-width: 650px;
+    font-size: 24px;
+}
+.hero-subtitle-small {
+    color: #6A3D2C;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.hero-btn-primary {
+    background-color: #6A3D2C;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+
+.hero-btn-primary:hover {
+    background-color: #542f22;
+    color: #fff;
+}
+
+.hero-btn-secondary {
+    background-color: transparent;
+    color: #6A3D2C;
+    border: 2px solid #6A3D2C;
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+
+.hero-btn-secondary:hover {
+    background-color: #6A3D2C;
+    color: #fff;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+}
+/* Curved Image Wrapper */
+.curved-image-wrapper {
+    height: 600px;
+    background-color: #fff;
+    border-radius: 300px 300px 15px 15px; /* Curved top */
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Make image fill wrapper */
+.hero-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.dot-circle {
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.image-section-container {
+    position: relative;
+}
+.star {
+    position: absolute;
+    top: 0;
+    right: 7px;
+    width: 60px;
+    height: 60px;
+    margin: 50px auto;
+}
+.star img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+.zig-zag {
+    position: absolute;
+    left: -14%;
+    bottom: 50px;
+}
+/* Section Title */
+.section-title {
+    color: #6A3D2C;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* Category Card */
+.category-card {
+    /* background: #fff;
+    border-radius: 20px; */
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.1); */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    /* box-shadow: 0 6px 20px rgba(0,0,0,0.15); */
+}
+.category-card .image-container{  
+    background-color: #fff;
+    border-radius: 300px 300px 15px 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Image inside card */
+.category-img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* border-radius: 175px 175px 15px 15px; */
+    /* object-fit: cover; */
+
+}
+.category-card h5 {
+    color: #6A3D2C;
+}
+
+/* Arrow Link */
+.category-link {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #6A3D2C;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.category-link:hover {
+    color: #542f22;
+    transform: translateX(5px);
+}
+
+.category-description {
+    border-bottom: 2px solid #6A3D2C;
+    width: 300px;
+}
+.title-container{
+    position: relative;
+}
+
+.title-container .zig-zag-line {
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% - 52px);
+    
+}
+/* #categories .container{
+    position: relative;
+} */
+
+
+#categories  {
+    position: relative;
+}
+
+#categories .dot-rectangle {
+    position: absolute;
+    right: 0;
+    /* width: 150px; */
+    top: 60px; /* optional: adjust vertical position */
+   
+}
+#categories .dot-rectangle img {
+     width: -webkit-fill-available;
+}
+#categories .title-container,
+#categories .row {
+    position: relative;
+    z-index: 1;
+}
+
+.testemonial-description {
+    /* border-bottom: 2px solid #6A3D2C; */
+    width: 275px;
+}
+
+.testemonial-description p{
+    color:#6A3D2C ;
+    font-size: 18px;
+}
+
+.membership .desc {
+    width: 410px;
+}
+.membership .desc h5 {
+   color: #6A3D2C;
+   font-size:25px
+}
+#more {
+    background-color: #EBEBEB;
+    position: relative;
+}
+#more .dot-rectangle {
+    position: absolute;
+    right: 0;
+    top: -70px;
+    /* width: 120px; */
+}
+#more .dot-rectangle img {
+    width: -webkit-fill-available;
+}
+#more .image-container {
+    position: relative;
+}
+#more .image-container .play-btn {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+}
+#more .cover-img {
+    width: 100%;
+}
+#get_started {
+    background-color: #FBCFC3;
+    position: relative;
+    padding: 65px 0;
+}
+#get_started .dot-rectangle {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    height: 165px;
+    /* width: 120px; */
+}
+#get_started .dot-rectangle img {
+    height: -webkit-fill-available;
+}
+.trio-zig-zag {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    width: 90px;
+}
+.trio-zig-zag img {
+    width: -webkit-fill-available;
+}
+footer {
+    background-color: #6A3D2C;
+}
+/* Brand logo text */
+footer .navbar-brand {
+    color: white !important;
+    font-family: 'Bubblegum Sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+footer p {
+   
+    font-family: 'Manrope';
+    font-weight: 100;
+
+}
+footer input {
+        font-family: 'Manrope';
+    font-size: 14px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    /* outline: none; */
+    /* border: green; */
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/*Medium screen*/
+@media(max-width:992px) {
+    .section-title {
+        font-size: 35px;
+    }
+    #home .image-section-container {
+        width: 400px;
+        margin: auto;
+    }
+
+}
+/*Small screen*/
+@media(max-width:767px) {
+    .hero-title {
+        font-size: 50px; 
+    }
+    .hero-subtitle {
+        font-size: 20px;
+    }
+    .section-title {
+        font-size: 25px;
+    }
+}
+@media (max-width: 575.98px) {
+    #home .image-section-container {
+        width: 270px;
+        margin: auto;
+    }
+    .curved-image-wrapper {
+         height: 400px;
+    }
+    .star {
+        right: -3px;
+        width: 40px;
+        height: 40px;
+    }
+    .zig-zag {
+        left: -14%;
+        bottom: 25px;
+        width: 90px;
+    }
+    .zig-zag  img {
+        width: 100%;
+    }
+    .category-card .image-container {
+        width: 250px;
+    }
+    .category-description {
+        width: 250px;
+    }
+}
+    
+
+
+
+
