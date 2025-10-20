@@ -31,6 +31,19 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 </head>
 
 <body>
@@ -71,7 +84,7 @@
             <div class="row align-items-center">
 
                 <!-- Text Content -->
-                <div class="col-lg-8 text-center text-lg-start">
+                <div class="col-lg-8 text-center text-lg-start " data-aos="fade-right"  data-aos-duration="2000">
                     <h1 class="display-4 fw-bold hero-title">Beaty outside,<br>
                         Health inside.</h1>
                     <p class="lead hero-subtitle">
@@ -87,7 +100,7 @@
 
                 <!-- Image Content -->
                 <div class="col-lg-4 text-center mt-4 mt-lg-0">
-                    <div class="image-section-container ">
+                    <div class="image-section-container " data-aos="fade-left"  data-aos-duration="2000">
                         <div class="star">
                             <!-- <div class="bar horizontal"></div>
                             <div class="bar vertical"></div>
@@ -126,7 +139,7 @@
             
 
             <!-- Cards Row -->
-            <div class="row g-4 mt-5">
+            <div class="row g-4 mt-5" data-aos="fade-down"  data-aos-duration="2000">
 
                 <!-- Card 1 -->
                 <div class="col-lg-4 col-md-6 ">
@@ -194,7 +207,7 @@
             
 
             <!-- Cards Row -->
-            <div class="row  mt-5">
+            <div class="row  mt-5"  data-aos="fade-down"  data-aos-duration="2000">
 
                 <!-- Card 1 -->
                 <div class="col-lg-4 col-md-6 ">
@@ -284,7 +297,7 @@
                 </div>
 
             </div>
-            <div class="row  mt-2 membership ">
+            <div class="row  mt-2 membership "  data-aos="zoom-in"  data-aos-duration="2000">
 
                 <div class="desc m-auto mb-3">
                     <h5> Membership costs only $199/year. 
@@ -325,36 +338,31 @@
     </section>
 
     <!-- Features Section -->
-    <section id="partner" class="py-5 ">
-         <div class="container text-center">
-            <!-- Section Title -->
-            <div class="title-container ">
-                <h2 class="section-title mb-5">Impacted by <br>  8,000+ people</h2>
-                <div class="zig-zag-line ">
-                    <img src="assets/img/Ornament 83.png">
-                </div>
+    <section id="partner" class="py-5">
+        <div class="container text-center">
+            <div class="title-container">
+            <h2 class="section-title mb-5">Impacted by <br> 8,000+ people</h2>
+            <div class="zig-zag-line">
+                <img src="assets/img/Ornament 83.png">
             </div>
-            
-
-            <!-- Cards Row -->
-            <div class="row align-items-center  mt-5">
-                <div class="col-lg-3 col-md-6 col-12 mb-5">
-                    <img src="assets/img/Group 1000003552.png">
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 mb-5">
-                    <img src="assets/img/Group 1000003547.png">
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 mb-5">
-                    <img src="assets/img/Group 1000003548.png">
-                </div>
-                <div class="col-lg-3 col-md-6 col-12 mb-5">
-                    <img src="assets/img/Group 1000003550.png">
-                </div>
-
             </div>
-            
+
+            <!-- Swiper Container -->
+            <div class="swiper partnerSwiper mt-5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="assets/img/Group 1000003552.png" class="img-fluid" alt="Partner 1"></div>
+                <div class="swiper-slide"><img src="assets/img/Group 1000003547.png" class="img-fluid" alt="Partner 2"></div>
+                <div class="swiper-slide"><img src="assets/img/Group 1000003548.png" class="img-fluid" alt="Partner 3"></div>
+                <div class="swiper-slide"><img src="assets/img/Group 1000003550.png" class="img-fluid" alt="Partner 4"></div>
+                <div class="swiper-slide"><img src="assets/img/Group 1000003552.png" class="img-fluid" alt="Partner 1"></div>
+                <div class="swiper-slide"><img src="assets/img/Group 1000003547.png" class="img-fluid" alt="Partner 2"></div>
+                <div class="swiper-slide"><img src="assets/img/Group 1000003548.png" class="img-fluid" alt="Partner 3"></div>
+                <div class="swiper-slide"><img src="assets/img/Group 1000003550.png" class="img-fluid" alt="Partner 4"></div>
+            </div>
+            </div>
         </div>
     </section>
+
 
     <!-- Contact Section -->
     <section id="get_started" class="">
@@ -377,7 +385,7 @@
             <!-- Cards Row -->
             <div class="row  mt-5">
                 <div class="col-lg-12">
-                    <div class="mt-4">
+                    <div class="mt-4"  data-aos="zoom-in"  data-aos-duration="2000">
                         <a href="#beauty-care" class="btn btn-lg me-3 mb-3 hero-btn-primary">Membership Sign up</a>
                         <a href="#contact" class="btn btn-lg hero-btn-secondary mb-3">Join today </a>
                     </div>
@@ -435,6 +443,27 @@
 
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+    AOS.init();
+    </script>
+    <script>
+        const swiper = new Swiper('.partnerSwiper', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+            },
+            breakpoints: {
+            0: { slidesPerView: 1 },
+            768: { slidesPerView: 3 },
+            992: { slidesPerView: 4 },
+            },
+        });
+    </script>
+
 </body>
 
 </html>
